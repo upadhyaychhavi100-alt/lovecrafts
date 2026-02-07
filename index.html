@@ -5,144 +5,221 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LoveCrafts | Handmade Gifts</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background-color: #fff1f5;
-      color: #333;
-      line-height: 1.6;
+      background: linear-gradient(180deg, #f9f6f2, #fff);
+      color: #2b2b2b;
+      line-height: 1.7;
     }
 
-    /* Hero Section */
+    /* Luxury Navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      padding: 18px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .navbar a {
+      margin: 0 18px;
+      text-decoration: none;
+      color: #7c2d12;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar a:hover {
+      color: #b45309;
+    }
+
+    /* Hero */
     .hero {
       text-align: center;
-      padding: 80px 20px;
+      padding: 120px 20px;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      color: #3f2a1d;
     }
 
     .hero p {
-      max-width: 600px;
-      margin: 0 auto 25px;
-      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto 35px;
+      font-size: 1.15rem;
+      color: #555;
     }
 
+    /* Buttons */
     .btn {
-      background-color: #92400e;
+      background: linear-gradient(135deg, #b45309, #7c2d12);
       color: #fff;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 30px;
+      padding: 15px 36px;
+      border-radius: 999px;
       font-size: 1rem;
-      cursor: pointer;
       text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 15px 35px rgba(124,45,18,0.35);
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #db2777;
+      transform: translateY(-2px);
+      box-shadow: 0 20px 45px rgba(124,45,18,0.45);
     }
 
-    /* Categories */
+    /* Sections */
+    .categories, .products {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
     .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
     .card {
-      background: #fffafc;
-      border-radius: 16px;
-      padding: 30px 20px;
+      background: #fff;
+      border-radius: 26px;
+      padding: 45px 30px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
     }
 
     .card h2 {
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-    }
-
-    /* Products */
-    .products {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+      color: #7c2d12;
     }
 
     .products h2 {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 50px;
+      color: #3f2a1d;
     }
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
 
     .product {
       background: #fff;
-      border-radius: 16px;
-      padding: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 26px;
+      padding: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
     }
 
     .product-img {
-      height: 160px;
-      background: #fbcfe8;
-      border-radius: 12px;
-      margin-bottom: 15px;
+      height: 180px;
+      background: linear-gradient(135deg, #fde68a, #fef3c7);
+      border-radius: 18px;
+      margin-bottom: 18px;
     }
 
-    .product h3 {
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-    }
-
-    .product p {
-      font-size: 0.9rem;
-      color: #666;
-      margin-bottom: 10px;
-    }
-
-    .product .btn {
-      display: block;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.9rem;
-    }
-
-    /* Footer */
     footer {
-      background: #fce7f3;
+      background: #3f2a1d;
+      color: #fff;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 40px;
+      padding: 40px 20px;
+      margin-top: 80px;
     }
- <style>
+
+    footer p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+      /* Instagram Luxury Touches */
+    .insta-strip {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .insta-card {
+      min-width: 220px;
+      height: 260px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, #fde68a, #fef3c7);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      font-weight: 500;
+    }
+
+    .insta-card span {
+      background: rgba(255,255,255,0.85);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #fff;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+      font-weight: 500;
+      z-index: 2000;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Hero -->
-  <header style="background:#fff7ed;padding:15px 20px;text-align:center;font-size:1.4rem;font-weight:bold;">💖 LoveCrafts – Handmade Gifts with Love</header>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#custom">Customize</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section class="hero">
-    <h1>Personalized Handmade Gifts for Every Occasion 💝</h1>
-    <p>Customized handmade gifts for couples, birthdays, anniversaries & surprises for special moments.</p>
-    <a href="#products" class="btn">Shop Now</a>
+  <!-- Hero -->
+  <header style="background:#ffe4ee;padding:15px 20px;text-align:center;font-size:1.4rem;font-weight:bold;">💖 LoveCrafts – Handmade Gifts with Love</header>
+
+  <section class="hero" id="home">
+    <h1>Luxury Handmade Gifts for Loved Ones 💎</h1>
+    <p>Thoughtfully designed premium handmade gifts for couples, birthdays & unforgettable moments.</p>
+    <a href="#products" class="btn">Explore Premium Gifts</a>
+  </section>
+
+  <!-- Instagram Style Showcase -->
+  <section>
+    <h2 style="text-align:center;font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:25px;color:#3f2a1d;">Loved on Instagram 💕</h2>
+    <div class="insta-strip">
+      <div class="insta-card"><span>Couple Gift 💑</span></div>
+      <div class="insta-card"><span>Birthday Surprise 🎂</span></div>
+      <div class="insta-card"><span>Anniversary Love 💍</span></div>
+      <div class="insta-card"><span>Custom Orders ✨</span></div>
+    </div>
   </section>
 
   <!-- Categories -->
@@ -169,7 +246,7 @@
     <div class="product-grid">
       <div class="product">
         <div class="product-img"></div>
-        <h3>Personalized Gift Box</h3>
+        <h3>Handmade Gift Box</h3>
         <p>Perfect for couples & birthdays</p>
         <p><strong>₹999</strong></p>
         <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20I%20want%20to%20order%20Handmade%20Gift%20Box%20(₹999)" class="btn">Order on WhatsApp</a>
@@ -192,7 +269,7 @@
     </section>
 
   <!-- Custom Order Form -->
-  <section class="products" style="background:#fff7fb;">
+  <section class="products" id="custom" style="background:#fff7fb;">
     <h2>Customize Your Gift 🎁</h2>
     <form style="max-width:500px;margin:0 auto;background:#fff;padding:25px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.08);">
       <label>Name on Gift</label><br>
@@ -214,10 +291,14 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer id="contact">
+    <p><strong>LoveCrafts</strong></p>
+    <p>Premium Handmade Gifts • PAN India Delivery</p>
+    <p>📲 Order on WhatsApp | 📸 Instagram Shop</p>
     © 2026 LoveCrafts | Handmade Gifts for Couples & Birthdays
   </footer>
 
+  <a href="https://wa.me/91XXXXXXXXXX" class="floating-wa">💬 Chat on WhatsApp</a>
+
 </body>
 </html>
-
