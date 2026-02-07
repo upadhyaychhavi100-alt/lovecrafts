@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoveCrafts | Handmade Gifts</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #fff1f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 25px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: #ec4899;
+      color: #fff;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #db2777;
+    }
+
+    /* Categories */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    /* Products */
+    .products {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-img {
+      height: 160px;
+      background: #fbcfe8;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .product p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .product .btn {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #fce7f3;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header style="background:#ffe4ee;padding:15px 20px;text-align:center;font-size:1.4rem;font-weight:bold;">💖 LoveCrafts – Handmade Gifts with Love</header>
+
+  <section class="hero">
+    <h1>Handmade Gifts Made with Love 💕</h1>
+    <p>Beautiful handmade crafts for couples, birthdays, and special moments.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="card">
+      <h2>💖 Couple Gifts</h2>
+      <p>Romantic handmade gifts to celebrate love and togetherness.</p>
+    </div>
+    <div class="card">
+      <h2>🎂 Birthday Gifts</h2>
+      <p>Personalized birthday crafts that create unforgettable memories.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <h2>Featured Gifts</h2>
+
+    <!-- WhatsApp Order Button -->
+    <div style="text-align:center; margin-bottom:30px;">
+      <a href="https://wa.me/91XXXXXXXXXX" class="btn">📲 Order on WhatsApp</a>
+    </div>
+    <h2>Featured Gifts</h2>
+    <div class="product-grid">
+      <div class="product">
+        <div class="product-img"></div>
+        <h3>Handmade Gift Box</h3>
+        <p>Perfect for couples & birthdays</p>
+        <p><strong>₹999</strong></p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20I%20want%20to%20order%20Handmade%20Gift%20Box%20(₹999)" class="btn">Order on WhatsApp</a>
+      </div>
+      <div class="product">
+        <div class="product-img"></div>
+        <h3>Explosion Scrapbook</h3>
+        <p>Customized with photos & messages</p>
+        <p><strong>₹1,499</strong></p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20I%20want%20to%20order%20Explosion%20Scrapbook%20(₹1499)" class="btn">Order on WhatsApp</a>
+      </div>
+      <div class="product">
+        <div class="product-img"></div>
+        <h3>Love Frame</h3>
+        <p>Perfect wall décor for couples</p>
+        <p><strong>₹799</strong></p>
+        <a href="https://wa.me/91XXXXXXXXXX?text=Hello%20I%20want%20to%20order%20Love%20Frame%20(₹799)" class="btn">Order on WhatsApp</a>
+      </div>
+    </div>
+    </section>
+
+  <!-- Custom Order Form -->
+  <section class="products" style="background:#fff7fb;">
+    <h2>Customize Your Gift 🎁</h2>
+    <form style="max-width:500px;margin:0 auto;background:#fff;padding:25px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.08);">
+      <label>Name on Gift</label><br>
+      <input type="text" placeholder="Enter name" style="width:100%;padding:10px;margin:8px 0 15px;border-radius:8px;border:1px solid #ccc;" />
+
+      <label>Occasion</label><br>
+      <select style="width:100%;padding:10px;margin:8px 0 15px;border-radius:8px;border:1px solid #ccc;">
+        <option>Birthday</option>
+        <option>Anniversary</option>
+        <option>Couple Gift</option>
+        <option>Other</option>
+      </select>
+
+      <label>Message</label><br>
+      <textarea placeholder="Your message" style="width:100%;padding:10px;margin:8px 0 15px;border-radius:8px;border:1px solid #ccc;"></textarea>
+
+      <a href="https://wa.me/91XXXXXXXXXX" class="btn" style="display:block;text-align:center;">Submit on WhatsApp</a>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 LoveCrafts | Handmade Gifts for Couples & Birthdays
+  </footer>
+
+</body>
+</html>
